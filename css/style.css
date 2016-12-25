@@ -460,13 +460,13 @@ body::before {
   .instructions {
     display: none;
   }
-
-body {
-  overflow-x: hidden;
-}
-
+  
   h1 { font-size: 3rem; }
   h2 { font-size: 1.8rem; }
+
+  .number {
+    font-size: 60vw;
+  }
 
   .intro-content {
       display: flex;
