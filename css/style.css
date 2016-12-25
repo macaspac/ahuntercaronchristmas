@@ -43,6 +43,7 @@ body {
     webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 
@@ -119,15 +120,15 @@ a.button:hover {
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .logo {
-  display: block;
   width: 100px;
 }
 
 .header {
+  display: block;
   position: fixed;
-  top: 20px;
-  left: 60px;
-  z-index: 100;
+  padding-top: 30px;
+  padding-left: 30px;
+  z-index: 10;
 }
 
 
@@ -141,12 +142,12 @@ a.button:hover {
 
 .intro-content {
     display: flex;
-    width: 1230px;
+    width: 60%;
 }
 
 .intro-text {
-  width: 66%;
-  padding: 0 60px;
+  width: 100%;
+  padding: 0 30px;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
   -ms-animation: fadein 2s; /* Internet Explorer */
@@ -199,7 +200,7 @@ a.button:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .content {
   display: flex;
-  width: 960px;
+  width: 100vh;
   flex-direction: column;
   z-index: 1;
 }
@@ -207,12 +208,13 @@ a.button:hover {
 .song-panel {
   width: 100%;
   height: 100vh;
+  padding: 30px;
   display: flex;
 }
 
 .song {
   z-index: 5;
-  width: 60%;
+  width: 70%;
   float: left;
 }
 
@@ -432,8 +434,7 @@ body::before {
   .cd-section:first-of-type > div::before {
     display: none;
   }
-}
-@media only screen and (min-width: 1050px) {
+
   .cd-section > div {
     position: fixed;
     top: 0;
@@ -448,8 +449,13 @@ body::before {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
+
   [data-hijacking="on"] .cd-section > div {
     position: absolute;
+  }
+
+  .keyboard {
+    display: none;
   }
 }
 
@@ -457,10 +463,12 @@ body::before {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hclm {
   width: 600px;
-  padding: 90px;
+  padding: 30px;
 }
 
 .outro {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  padding: 30px;
 }
