@@ -461,6 +461,10 @@ body::before {
     display: none;
   }
 
+body {
+  overflow-x: hidden;
+}
+
   h1 { font-size: 3rem; }
   h2 { font-size: 1.8rem; }
 
