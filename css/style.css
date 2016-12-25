@@ -97,8 +97,9 @@ a, a:hover, a:active, a:focus {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 a.button {
+  display: inline-block;
+  text-align: center;
   padding: 15px 30px;
-  width: auto;
   background-color: #ffffff;
   color: #EB3349;
   border: none;
@@ -108,7 +109,6 @@ a.button {
   outline: none;
   box-shadow: 0 3px 10px rgba(0,0,0,0.12), 0 0px 0px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-
 }
 
 a.button:hover {
@@ -478,7 +478,7 @@ body::before {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hclm {
   width: 600px;
-  padding: 30px;
+  padding: 60px;
 }
 
 .outro {
