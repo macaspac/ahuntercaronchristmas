@@ -454,8 +454,23 @@ body::before {
     position: absolute;
   }
 
-  .keyboard {
+}
+
+@media only screen and (max-width: 750px) {
+  .instructions {
     display: none;
+  }
+
+  h1 { font-size: 3rem; }
+  h2 { font-size: 1.8rem; }
+
+  .intro-content {
+      display: flex;
+      width: 100%;
+  }
+
+  .hclm {
+    width: 80%;
   }
 }
 
