@@ -460,7 +460,7 @@ body::before {
   .instructions {
     display: none;
   }
-  
+
   h1 { font-size: 3rem; }
   h2 { font-size: 1.8rem; }
 
@@ -474,7 +474,7 @@ body::before {
   }
 
   .hclm {
-    width: 80%;
+    width: 400px;
   }
 }
 
